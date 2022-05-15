@@ -201,7 +201,9 @@ pt_stopwords = pt_stopwords.replace(" ","").splitlines() ## manipulating extract
 
 text = " ".join(s.lower() for s in df_filtered.texts) # lowercasing all the text words
 wordcloud_theme = df_filtered.theme[0].lower() # get the search theme
-wordcloud_title = 'Author: '+ df_filtered.authors[0]+' │ Theme: ' + df_filtered.theme[0] +' │ '+ date_range # setting the title
+wordcloud_search_theme = search_theme
+wordcloud_title = 'Author: '+ df_filtered.authors[0]+' │ Theme: ' + search_theme +' │ '+ date_range # setting the title
+
 
 ## manual stopwords input
 manual_stopwords = [wordcloud_theme,
@@ -276,6 +278,8 @@ manual_stopwords = [wordcloud_theme,
 ## stopwords used
 stop_words  = list(pt_stopwords) + list(STOPWORDS) + list(manual_stopwords) 
 
+
+
 # WordCloud NLP algorithm
 
 ## WordCloud Figure
@@ -303,13 +307,13 @@ wordcloud_text = WordCloud(min_font_size=50,
                normalize_plurals= True
 ).process_text(text)
 
-
 # Ploting the WordCloud figure
 plt.figure(figsize=(20,10))
 plt.title(wordcloud_title, fontsize=10, color="black")
 plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis("off")
 plt.show()
+plt.savefig(search_theme+'.png')
 
 # iterative scatter analysis with wordcloud words
 
@@ -322,7 +326,7 @@ df2 = df2[['word','count']]
 
 
 ## generating a scatterplot from the plotfy library
-fig = px.scatter(df2.query('count > 5'),
+fig = px.scatter(df2.query('count > 10'),
                 y="count",
                 size="count",
                 color="word",
@@ -334,14 +338,7 @@ fig = px.scatter(df2.query('count > 5'),
                 size_max=60)
 fig.show()
 
-
-
-
-
-
-
-
-
+plt.offline.plot(fig, filename = search_theme+'.html')
 
 
 
