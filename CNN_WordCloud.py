@@ -16,7 +16,9 @@ nltk.download('punkt') # "Punkt Tokenizer Models" divides the text into a list o
 
 
 # Number of pages to scrap
-n = 8
+n = 3
+
+# search theme
 search_theme = 'energia'
 
 
@@ -150,6 +152,17 @@ print(date_range)
 
 df_filtered
 
+# WordCloud text and additional parameters
+
+text = " ".join(s.lower() for s in df_filtered.texts)
+wordcloud_theme = df_filtered.theme[0].lower()
+wordcloud_title = 'Author: '+ df_filtered.authors[0]+' │ Theme: ' + df_filtered.theme[0] +' │ '+ date_range     # WordCloud text and additional parameters
+
+text = " ".join(s.lower() for s in df_filtered.texts)
+wordcloud_theme = df_filtered.theme[0].lower()
+wordcloud_title = 'Author: '+ df_filtered.authors[0]+' │ Theme: ' + df_filtered.theme[0] +' │ '+ date_range     
+
+
 # StopWords parameters
 
 PORTUGUESE_STOPWORDS_PATCH_1 = r'https://gist.githubusercontent.com/alopes/5358189/raw/2107d809cca6b83ce3d8e04dbd9463283025284f/stopwords.txt'
@@ -159,7 +172,8 @@ response_PATCH = requests.get(PORTUGUESE_STOPWORDS_PATCH_1)
 
 pt_stopwords = response_PATCH.text
 
-pt_stopwords = pt_stopwords.replace(" ","").splitlines()   
+pt_stopwords = pt_stopwords.replace(" ","").splitlines()  
+
 
 
 stop_words  = list(pt_stopwords) + list(STOPWORDS) + [wordcloud_theme,
@@ -187,12 +201,7 @@ stop_words  = list(pt_stopwords) + list(STOPWORDS) + [wordcloud_theme,
                                                     'anadolu',
                                                     'images',
                                                     'agency']
-
-# WordCloud text and additional parameters
-
-text = " ".join(s.lower() for s in df_filtered.texts)
-wordcloud_theme = df_filtered.theme[0].lower()
-wordcloud_title = 'Author: '+ df_filtered.authors[0]+' │ Theme: ' + df_filtered.theme[0] +' │ '+ date_range                                                    
+                                               
 
 # Plot the WordCloud
 
