@@ -13,7 +13,7 @@
 # [Project Notebook](https://github.com/viniciusgribas/EnergyNewsScrapping) [BR 🇧🇷] 
 
 ---
-># Graphical and Spatial Exploratory Analysis - Brazil Electricity Generation Data from ANEEL [EN 🇬🇧] 
+># Energy News Web Scrappers [EN 🇬🇧] 
 
 ---
 
