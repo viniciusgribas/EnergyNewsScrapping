@@ -35,7 +35,7 @@ Fiquem à vontade para me contatar caso tenham feedbacks, sites interessantes pa
 #energia #github #machinelearning #nlp #textmining #mme #cnn #aneel #anp
 
 1️ - Resultados CNN-NEWS (energia):
-- 💻 Notebook: tinyurl.com/ydapn5ct
+- 💻 Notebook: https://tinyurl.com/ydapn5ct
 - 📊 Análise ScatterPlot: https://lnkd.in/djAaaB5M
 -📰 Análise WordCloud: https://lnkd.in/duGg-s72
 
