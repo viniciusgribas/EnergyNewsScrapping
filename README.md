@@ -1,6 +1,4 @@
 
----
-
 # [Vinicius Guerra e Ribas -  Data Engineer](https://www.linkedin.com/in/vinicius-guerra-e-ribas/)
 [Energy Engineer (UnB)](https://www.unb.br/) │ [Data Scientist and Analytics (USP)](https://www5.usp.br/)
 
@@ -16,39 +14,36 @@
 
 ---
 
+With the aim of applying knowledge in Text Mining, Sentiment Analysis, NLP, Machine Learning, Crowlers and Web Scrapping, data solutions were developed with themes relevant to the energy sector.
 
+These solutions scrape data from the CNN Brasil website (with a focus on the international energy scenario); and from government websites of agencies such as ANP, ANEEL and MME (with a focus on the national energy scenario).
 
-Visando aplicar conhecimentos de Text Mining, Sentiment Analysis, NLP, Machine Learning, Crowlers e Web Scrapping. 
-Foram desenvolvidas soluções de dados com temas pertinentes ao setor energético.
+Once scraped, the data is manipulated and added to a dataframe, and finally presented via plotly and wordcloud, as shown in the figures below.
 
-Estas soluções raspam dados dos sites da CNN Brasil (com foco no cenário energético internacional);e sites governamentais de agências como a ANP e ANEEL e do MME (com foco no cenário energético nacional).
+All notebooks were developed via jupyter notebook and are available in my GitHub repository (github.com/viniciusgribas).
 
-Uma vez raspados, os dados são manipulados e adicionados a um dataframe, sendo por fim apresentados via plotly e wordcloud, conforme figuras abaixo.
+The results obtained (listed in the comments) were very interesting! They allow us to extract insights into what is happening in Brazil and in the world in the energy theme.
 
-Todos foram desenvolvidos via jupyter notebook e estão disponibilizados em meu repositório no GitHub (github.com/viniciusgribas).
+Feel free to contact me if you have any feedback, interesting websites to scrape, or insights to share.
 
-Os resultados obtidos (seguem nos comentários) foram muito interessantes! Permitem extrair insights do que está acontecendo no Brasil e no Mundo no tema de energia.
+#energy #github #machinelearning #nlp #textmining #mme #cnn #aneel #anp
 
-Fiquem à vontade para me contatar caso tenham feedbacks, sites interessantes para raspar ou insights para compartilhar.
-
-#energia #github #machinelearning #nlp #textmining #mme #cnn #aneel #anp
-
-1️ - Resultados CNN-NEWS (energia):
+1️ - CNN-NEWS Results (energy):
 - 💻 Notebook: https://tinyurl.com/ydapn5ct
-- 📊 Análise ScatterPlot: https://lnkd.in/djAaaB5M
--📰 Análise WordCloud: https://lnkd.in/duGg-s72
+- 📊 ScatterPlot Analysis: https://lnkd.in/djAaaB5M
+-📰 WordCloud Analysis: https://lnkd.in/duGg-s72
 
-2️ - Resultados ANEEL:
+2️ - ANEEL Results:
 - 💻 Notebook: https://lnkd.in/dW7Pm69N
-- 📊 Análise ScatterPlot: https://lnkd.in/d262_Bu2
--📰 Análise WordCloud: https://lnkd.in/dTpESCA7
+- 📊 ScatterPlot Analysis: https://lnkd.in/d262_Bu2
+-📰 WordCloud Analysis: https://lnkd.in/dTpESCA7
 
-3️ - Resultados ANP:
+3️ - ANP Results:
 - 💻 Notebook: https://lnkd.in/dzVhxQcg
-- 📊 Análise ScatterPlot: https://lnkd.in/dJXg-JnT
--📰 Análise WordCloud: https://lnkd.in/d98aiUQm
+- 📊 ScatterPlot Analysis: https://lnkd.in/dJXg-JnT
+-📰 WordCloud Analysis: https://lnkd.in/d98aiUQm
 
-4️- Resultados MME:
+4️- MME Results:
 - 💻 Notebook: https://lnkd.in/dZMcSkEv
-- 📊 Análise ScatterPlot: https://lnkd.in/dHKNSjsu
--📰 Análise WordCloud: https://lnkd.in/dzZUd8r7
+- 📊 ScatterPlot Analysis: https://lnkd.in/dHKNSjsu
+-📰 WordCloud Analysis: https://lnkd.in/dzZUd8r7
